@@ -1,0 +1,27 @@
+body {
+    background-image: url('Images/Kavala.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectionclass {
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.titletext {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 0.4px;
+}
