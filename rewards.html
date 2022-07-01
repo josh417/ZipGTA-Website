@@ -17,6 +17,7 @@
         <button onclick="checkNumbers()"id="SubmitButton" class="calculatebutton">Calculate Your Price</button>
         <hr style="width:20%;text-align:center;margin-top:2em;color:white;height: 1%;">
         <h2 id="PriceDisplay" class="resulttext"></h2>
+        <button id="getstarted" class="getstartedbutton" onclick="location.href = 'https://www.grandtheftarma.com/messenger/compose/?to=25735'"></button>
     </div>
 
     <div class="backdiv">
@@ -44,7 +45,7 @@
             totalCalulcation = startingNumber * 9000
         }
 
-
+        document.getElementById("getstarted").innerHTML = 'Get Started'
         document.getElementById("PriceDisplay").innerHTML = 'Price: ' + '£' + totalCalulcation.toLocaleString()
     }
 

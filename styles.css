@@ -103,6 +103,22 @@ body {
     letter-spacing: 0.4px;
 }
 
+.getstartedbutton {
+    padding: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    border: transparent;
+    transition: all 0.2s;
+}
+
+.getstartedbutton:hover {
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.2s;
+}
 
 /* 4 Boxes */
 
