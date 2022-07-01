@@ -1,0 +1,242 @@
+/* Background Body */
+
+body {
+    background-image: url('Images/Kavala.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header Title */
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.titletext {
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 0.4px;
+}
+
+
+
+
+
+
+
+/* Content Box */ 
+
+.contentbox {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    justify-content: center;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #262626;
+}
+
+.inputbox {
+    flex-direction: column;
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #363636;
+    border-radius: 16px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.checkbox {
+    height: 2em;
+    width: 2em;
+}
+
+.calculatebutton {
+    margin-top: 1em;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    transition: all 0.2s;
+}
+
+.calculatebutton:hover {
+    transition: all 0.2s;
+    cursor: pointer;
+    color: #cd201f;
+}
+
+.questiontext {
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.resulttext {
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 0.4px;
+}
+
+
+/* 4 Boxes */
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.boxdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: grid;
+    margin-top: 10%;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: rgba(47, 47, 47, 0);
+    padding: 70px;
+    border-radius: 20px;
+    border-color: #262626;
+    border-width: 6px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    transition: all 0.6s;;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 42px;
+}
+
+.button:hover {
+    transform: all 2s;
+    cursor: pointer;
+    color: #cd201f;
+}
+
+
+@media (max-width: 1024px) {
+
+    .boxdiv {
+        display: grid;
+        grid-area: auto;
+        grid-template-rows: auto;
+        grid-template: auto;
+        justify-content: center;
+    }
+
+    .button {
+        display: grid;
+        margin-top: 10%;
+        margin-left: 15%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15%;
+        background-color: rgba(47, 47, 47, 0);
+        padding: 55px;
+        border-radius: 20px;
+        border-color: #262626;
+        border-width: 6px;
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        transition: all 0.2s;;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        font-size: 42px;
+    }
+
+
+
+
+
+    .contentbox {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        justify-content: center;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        background-color: #262626;
+    }
+
+
+}
+
+
+/* Back Div */
+
+.backdiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.backtext {
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.4px;
+    color: white;
+    transition: all 0.2s;;
+
+}
+
+.backtext:hover {
+    transition: all 0.2s;;
+    color: #cd201f;
+    cursor: pointer;
+}
+
+/* Footer */
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.footertext {
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 0.4px;
+}
