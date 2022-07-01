@@ -26,6 +26,13 @@ body {
 }
 
 
+.logo {
+    display: flex;
+    height: auto;
+    width: auto;
+    max-width: 200px;
+}
+
 
 
 
@@ -45,15 +52,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    background-color: #262626;
+    background-color: #0000003b;
 }
 
 .inputbox {
     flex-direction: column;
     margin-top: 1em;
     padding: 1em;
-    background-color: #363636;
+    background-color: #212121;
     border-radius: 16px;
+    border-color: transparent;
     color: white;
     font-size: 16px;
     text-align: center;
@@ -122,6 +130,30 @@ body {
 
 /* 4 Boxes */
 
+#levelupbutton {
+    color: white;
+}
+
+#levelupbutton:hover {
+    color: #706fd3;
+}
+
+#creditsbutton {
+    color: white;
+}
+#creditsbutton:hover {
+    color: #ffb142;
+}
+
+#xpbutton {
+    color: white;
+}
+
+#xpbutton:hover {
+    color: #ff5252;
+}
+
+
 .box-container {
     display: flex;
     justify-content: center;
@@ -141,7 +173,7 @@ body {
     background-color: rgba(47, 47, 47, 0);
     padding: 70px;
     border-radius: 20px;
-    border-color: #262626;
+    border-color: transparent;
     border-width: 6px;
     background-size: cover;
     background-repeat:no-repeat;
@@ -154,11 +186,13 @@ body {
     font-size: 42px;
 }
 
+
+
 .button:hover {
     transform: all 2s;
     cursor: pointer;
-    color: #cd201f;
 }
+
 
 
 @media (max-width: 1024px) {
@@ -210,7 +244,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-        background-color: #262626;
+        background-color: transparent;
     }
 
 
@@ -238,7 +272,7 @@ body {
 
 .backtext:hover {
     transition: all 0.2s;;
-    color: #cd201f;
+    color: #218c74;
     cursor: pointer;
 }
 
@@ -255,7 +289,7 @@ body {
     display: flex;
     align-items: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: #218c74;
     font-size: 32px;
     letter-spacing: 0.4px;
 }
