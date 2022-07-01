@@ -67,10 +67,13 @@ body {
 .calculatebutton {
     margin-top: 1em;
     background-color: transparent;
+    border-radius: 6px;
     border: transparent;
+    box-shadow: 5px 5px 5px #191919;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    text-align: center;
     font-size: 22px;
     transition: all 0.2s;
 }
@@ -78,7 +81,7 @@ body {
 .calculatebutton:hover {
     transition: all 0.2s;
     cursor: pointer;
-    color: #cd201f;
+    font-size: 24px;
 }
 
 .questiontext {
