@@ -21,7 +21,7 @@
         <hr style="width:20%;text-align:center;margin-top:2em;color:white;height: 1%;">
         <h2 id="CreditDisplay" class="resulttext"></h2>
         <h2 id="PriceDisplay" class="resulttext"></h2>
-        <button id="getstarted" class="getstartedbutton" onclick="location.href = 'https://www.grandtheftarma.com/messenger/compose/?to=25735'"></button>
+        <button id="getstarted" class="getstartedbutton" onclick="messageZip()"></button>
     </div>
 
     <div class="backdiv">
@@ -32,6 +32,10 @@
 
 
 <script>
+
+    function messageZip() {
+        window.open('https://www.grandtheftarma.com/messenger/compose/?to=25735')
+    }
       
       function calculate(startCredits, startLevel, endLevel){
         let credits = []
