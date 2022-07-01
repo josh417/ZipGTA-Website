@@ -33,6 +33,32 @@
         let startingNumber = document.getElementById("startingNumber").value
         let totalCalulcation = startingNumber * 900
 
+
+        if (startingNumber < 2000) {
+            totalCalulcation = startingNumber * 1000
+        }
+
+        if (startingNumber > 1999 && startingNumber < 10000) {
+            totalCalulcation = startingNumber * 950
+        }
+
+        if (startingNumber > 9999 && startingNumber < 30000) {
+            totalCalulcation = startingNumber * 900
+        }
+
+        if (startingNumber > 29999 && startingNumber < 60000) {
+            totalCalulcation = startingNumber * 850
+        }
+
+        if (startingNumber > 59999 && startingNumber < 100000) {
+            totalCalulcation = startingNumber * 800
+        }
+
+        if (startingNumber > 99999) {
+            window.alert("Due to the large volume you wish to purchase, please contact me privately and I will offer you a custom price.")
+            totalCalulcation = startingNumber * 800
+        }
+
         document.getElementById("PriceDisplay").innerHTML = 'Price: ' + '£' + totalCalulcation.toLocaleString()
         document.getElementById("getstarted").innerHTML = 'Get Started'
     }
