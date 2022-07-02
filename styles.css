@@ -1,3 +1,15 @@
+/* Fonts */
+@font-face {
+    font-family: bookFont;
+    src: url(Fonts/book.ttf);
+} 
+
+@font-face {
+    font-family: mediumFont;
+    src: url(Fonts/medium.ttf);
+}
+
+
 /* Background Body */
 
 body {
@@ -58,7 +70,7 @@ body {
     border: transparent;
     box-shadow: 5px 5px 5px #191919;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: bookFont;
     font-weight: bold;
     text-align: center;
     font-size: 22px;
@@ -74,7 +86,7 @@ body {
 .questiontext {
     display: flex;
     align-items: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: bookFont;
     color: white;
     font-size: 22px;
     font-weight: 600;
@@ -84,7 +96,7 @@ body {
 .resulttext {
     display: flex;
     align-items: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: bookFont;
     color: white;
     font-size: 22px;
     letter-spacing: 0.4px;
@@ -92,7 +104,7 @@ body {
 
 .getstartedbutton {
     padding: 1em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: bookFont;
     font-size: 16px;
     color: white;
     background-color: transparent;
@@ -136,7 +148,7 @@ body {
         background-position-y: center;
         transition: all 0.2s;;
         color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: bookFont;
         font-weight: bolder;
         font-size: 42px;
     }
@@ -175,7 +187,7 @@ body {
 .backtext {
     display: flex;
     align-items: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:bookFont;
     font-size: 32px;
     letter-spacing: 0.4px;
     color: white;
@@ -258,8 +270,8 @@ body {
 
 .email {
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
+    font-family: bookFont;
+    font-weight: 300;
     font-size: 32px;
 }
 
@@ -339,7 +351,7 @@ body { /* Background Image Stuff */
 .ptext {
     display: flex;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: bookFont;
     font-size: 23px;
     text-align: center;
     margin-left: 25px;
