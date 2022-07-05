@@ -32,7 +32,7 @@ body {
 /* Content Box */ 
 
 .contentbox {
-    margin-top: 5em;
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
@@ -83,6 +83,59 @@ body {
     font-size: 24px;
 }
 
+.stock {
+    list-style: circle;
+    display: flex;
+    align-items: center;
+    font-family: bookFont;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding-bottom: 1em;
+}
+
+.listmaster {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    list-style: circle;
+    display: flex;
+    align-items: center;
+    font-family: bookFont;
+    color: white;
+    font-size: 22px;
+    font-weight: 350;
+    letter-spacing: 0.4px;
+    margin-top: -0.1em;
+}
+
+#messagelink:hover {
+    cursor: pointer;
+}
+
+.contactbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacttext {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    font-family: bookFont;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
 .questiontext {
     display: flex;
     align-items: center;
@@ -112,6 +165,7 @@ body {
     border: transparent;
     transition: all 0.2s;
 }
+
 
 .getstartedbutton:hover {
     cursor: pointer;
@@ -152,9 +206,6 @@ body {
         font-weight: bolder;
         font-size: 42px;
     }
-
-
-
 
 
     .contentbox {
@@ -301,6 +352,17 @@ body { /* Background Image Stuff */
     display: flex;
 }
 
+.logoupgrades {
+    margin-top: 5%;
+    width: auto;
+    height: auto;
+    align-items: center;
+    max-width: 412px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
 .box {
     display: flex;
     flex-direction: column;
@@ -336,6 +398,19 @@ body { /* Background Image Stuff */
     cursor: pointer;
 }
 
+#upgradebox {
+    border-color: #E085B6;
+    transition: all 0.5s;
+}
+
+#upgradebox:hover {
+    transition: all 0.5s;
+    border-color: #E085B6;
+    background-color: #e085b51f;
+    cursor: pointer;
+    
+}
+
 #rewardbox {
     border-color: #ff5252;
     transition: all 0.5s;
@@ -368,7 +443,7 @@ body { /* Background Image Stuff */
 
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1415px) {
 
     .headerlogo {
         width: auto;
@@ -401,7 +476,7 @@ body { /* Background Image Stuff */
 
 
     .footer {
-        margin-top: 697px;
+        margin-top: 950px;
     }
 
   }

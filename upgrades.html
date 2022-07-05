@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+        <img class="logo" src="Images/upgrades.png" alt="">
+        <!-- <h1 class="titletext">Zip's Reward Buying Service</h2> -->
+    </div>
+
+    <div class="contentbox">
+        <h2 class="stock">Current Stock:</h2>
+        <!-- List -->
+        <h3 class="list"> 3x Ballistic Dappening</h3>
+        <h3 class="list"> 2x Harness</h3>
+        <h3 class="list"> 3x Lock Difficulty</h3>
+        <h3 class="list"> 9x Run Flat Tyres</h3>
+        <h3 class="list"> 5x Tracker</h3>
+        <h3 class="list"> 4x Virtual Cargo</h3>
+        <h3 class="list"> 5x Weight Reduction</h3>
+        <h3 class="list"> 9x Surplus Ammo</h3>
+
+
+    </div>
+
+    <div class="contentbox">
+        <h2 class="contacttext">Contact Details:</h2>
+        <h3 class="list"> Discord: Josh_#4471</h3>
+        <h3 class="list" id="messagelink" onclick="messageZip()"> Forum Name: <link rel="link" href="">Zip</h3>
+    </div>
+
+
+    <div class="backdiv">
+        <h1 onclick="location.href = 'index.html'"class="backtext">Back To Home</h2>
+    </div>
+</body>
+</html>
+
+
+<script>
+
+    function messageZip() {
+        window.open('https://grandtheftarma.com/profile/25735-zip/')
+    }
+
+    function openThread(){
+        window.open('https://grandtheftarma.com/profile/25735-zip/')
+    }
+
+    function checkNumbers() {
+        let startingNumber = document.getElementById("startingNumber").value
+        let totalCalulcation
+
+        if (startingNumber < 500) {
+            totalCalulcation = startingNumber * 8000
+        }
+
+        if (startingNumber > 499 && startingNumber < 1000) {
+            totalCalulcation = startingNumber * 8500
+        }
+
+        if (startingNumber > 999) {
+            totalCalulcation = startingNumber * 9000
+        }
+
+        if (startingNumber > 3000) {
+            window.alert("Due to the high volume you wish to sell, please contact me privately for a better offer.")
+        }
+
+        if (hatodiscount.checked == true){
+            console.log("Ticked")
+            totalCalulcation = totalCalulcation * 1.10
+        }
+
+        document.getElementById("getstarted").innerHTML = 'Get Started'
+        document.getElementById("PriceDisplay").innerHTML = 'Price: ' + '£' + totalCalulcation.toLocaleString()
+    }
+
+
+
+</script>
