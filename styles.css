@@ -50,12 +50,18 @@ body {
     flex-direction: column;
     margin-top: 1em;
     padding: 1em;
-    background-color: #212121;
+    background-color: #000000ab;
     border-radius: 16px;
     border-color: transparent;
     color: white;
     font-size: 16px;
     text-align: center;
+    font-family: bookFont;
+}
+
+.inputbox::content {
+    font-family: bookFont;
+    font-size: 16px;
 }
 
 .checkbox {
@@ -273,7 +279,7 @@ body {
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 10%;
 }
 
 .footertext {
@@ -350,10 +356,15 @@ body { /* Background Image Stuff */
 }
 
 .section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     justify-content: center;
     align-items: center;
-    height: 32em;
+    height: 16em;
+    margin-bottom: 100px;
 }
 
 .logo {
@@ -469,7 +480,10 @@ body { /* Background Image Stuff */
     }
 
     .section {
-        display: grid;
+        margin-top: 600px;
+        margin-bottom: -300px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 32em;

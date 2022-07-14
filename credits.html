@@ -13,9 +13,9 @@
         <!--<h1 class="titletext">Zip's Credit Service</h2> -->
     </div>
 
-    <div class="contentbox">
-        <input id="startingNumber" class="inputbox" type="number" placeholder="How many credits?">
-        <button onclick="checkNumbers()"id="SubmitButton" class="calculatebutton">Calculate Your Price</button>
+    <div class="contentBoxCredits">
+        <input id="startingNumber" class="inputbox" type="number" placeholder="How many credits?"> 
+        <button onclick="checkNumbers()"id="SubmitButton" class="calculateCredits">Get Price</button>
         <hr style="width:20%;text-align:center;margin-top:2em;color:white;height: 1%;">
         <h2 id="PriceDisplay" class="resulttext"></h2>
         <button id="getstarted" class="getstartedbutton" onclick="messageZip()"></button>
@@ -39,29 +39,36 @@
         let totalCalulcation = startingNumber * 900
 
 
-        if (startingNumber < 2000) {
+        if (startingNumber < 3000) {
+            totalCalulcation = startingNumber * 1500
+        }
+
+        if (startingNumber >= 3000 && startingNumber < 6000) {
+            totalCalulcation = startingNumber * 1400
+        }
+
+        if (startingNumber >= 6000 && startingNumber < 10000) {
+            totalCalulcation = startingNumber * 1300
+        }
+
+        if (startingNumber >= 10000 && startingNumber < 15000) {
+            totalCalulcation = startingNumber * 1250
+        }
+
+        if (startingNumber >= 15000 && startingNumber < 25000) {
+            totalCalulcation = startingNumber * 1200
+        }
+
+        if (startingNumber >= 25000 && startingNumber < 50000) {
+            totalCalulcation = startingNumber * 1150
+        }
+
+        if (startingNumber >= 50000 && startingNumber < 100000) {
+            totalCalulcation = startingNumber * 1050
+        }
+
+        if (startingNumber >= 100000) {
             totalCalulcation = startingNumber * 1000
-        }
-
-        if (startingNumber > 1999 && startingNumber < 10000) {
-            totalCalulcation = startingNumber * 950
-        }
-
-        if (startingNumber > 9999 && startingNumber < 30000) {
-            totalCalulcation = startingNumber * 900
-        }
-
-        if (startingNumber > 29999 && startingNumber < 60000) {
-            totalCalulcation = startingNumber * 850
-        }
-
-        if (startingNumber > 59999 && startingNumber < 100000) {
-            totalCalulcation = startingNumber * 800
-        }
-
-        if (startingNumber > 99999) {
-            window.alert("Due to the large volume you wish to purchase, please contact me privately and I will offer you a custom price.")
-            totalCalulcation = startingNumber * 800
         }
 
         document.getElementById("PriceDisplay").innerHTML = 'Price: ' + '£' + totalCalulcation.toLocaleString()
@@ -71,3 +78,74 @@
 
 
 </script>
+
+
+
+
+<style>
+
+.calculateCredits {
+    margin-top: 1em;
+    background-color: #ff9933;
+    border-radius: 6px;
+    border: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px #191919;
+    color: white;
+    font-family: bookFont;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 22px;
+    transition: all 0.2s;
+}
+
+.calculateCredits:hover {
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.contentBoxCredits {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #ff9933;
+    border-width: 2px;
+    border-radius: 30px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    justify-content: center;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #0000003b;
+}
+
+
+@media (max-width: 1024px) {
+
+
+    .contentBoxCredits {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-color: #ff9933;
+        border-width: 2px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        justify-content: center;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        background-color: transparent;
+    }
+
+}
+</style>
