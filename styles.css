@@ -448,6 +448,17 @@ body { /* Background Image Stuff */
     cursor: pointer;
 }
 
+#scholarshipbox {
+    border-color: #36a2ea;
+    transition: all 0.5s;
+}
+
+#scholarshipbox:hover {
+    transition: all 0.5s;
+    background-color: #36a2ea1f;
+    cursor: pointer;
+}
+
 
 .ptext {
     display: flex;
@@ -457,6 +468,7 @@ body { /* Background Image Stuff */
     text-align: center;
     margin-left: 25px;
     margin-right: 25px;
+    word-spacing: 0.45px;
 }
 
 

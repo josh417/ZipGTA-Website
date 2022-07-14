@@ -13,14 +13,11 @@
         <!-- <h1 class="titletext">Zip's Levelling Service</h2> -->
     </div>
 
-    <div class="contentbox">
+    <div class="contentBoxLevels">
         <input id="startingNumber" class="inputbox" type="number" placeholder="Enter your current level">
-        <input id="endingNumber"class="inputbox" type="number" placeholder="Enter a higher level">
-        <h2 class="questiontext">Are you HATO or NHS?</h2>
-        <input id="hatodiscount" class="checkbox" type="checkbox">
-        <button onclick="checkNumbers()"id="SubmitButton" class="calculatebutton">Calculate Your Price</button>
+        <input id="endingNumber"class="inputbox" type="number" placeholder="Enter your ending level">
+        <button onclick="checkNumbers()"id="SubmitButton" class="calculateLevels">Calculate Your Price</button>
         <hr style="width:20%;text-align:center;margin-top:2em;color:white;height: 1%;">
-        <h2 id="CreditDisplay" class="resulttext"></h2>
         <h2 id="PriceDisplay" class="resulttext"></h2>
         <button id="getstarted" class="getstartedbutton" onclick="messageZip()"></button>
     </div>
@@ -56,18 +53,12 @@
             sum += credits[i];
         }
         console.log(sum)
-        document.getElementById("CreditDisplay").innerHTML = 'Credits Required: ' + sum
         document.getElementById("getstarted").innerHTML = 'Get Started'
 
 
-        if (document.getElementById('hatodiscount').checked) {
-            let discountNumber = sum * 800
-            document.getElementById("PriceDisplay").innerHTML = 'Estimated Price: ' + '£' + discountNumber.toLocaleString()
-        } else {
-            let number = sum * 855
-            document.getElementById("PriceDisplay").innerHTML = 'Estimated Price: ' + '£' + number.toLocaleString()
+        let number = sum * 1000
+        document.getElementById("PriceDisplay").innerHTML = 'Price: ' + '£' + number.toLocaleString()
 
-        }
 
 
 
@@ -348,3 +339,74 @@
 
 
 </script>
+
+
+
+
+<style>
+    .calculateLevels {
+    margin-top: 1em;
+    background-color: #706fd3;
+    border-radius: 6px;
+    border: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px #191919;
+    color: white;
+    font-family: bookFont;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 22px;
+    transition: all 0.2s;
+}
+
+.calculateLevels:hover {
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.contentBoxLevels {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #706fd3;
+    border-width: 2px;
+    border-radius: 30px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    justify-content: center;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #0000003b;
+}
+
+
+@media (max-width: 1024px) {
+
+
+    .contentBoxLevels {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-color: #706fd3;
+        border-width: 2px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        justify-content: center;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        background-color: transparent;
+    }
+
+}
+</style>
+</style>

@@ -13,24 +13,21 @@
         <!-- <h1 class="titletext">Zip's Reward Buying Service</h2> -->
     </div>
 
-    <div class="contentbox">
-        <h2 class="stock">Current Stock: </h2>
-        <p class="pu">Price is per upgrade</p>
-		<p class="pu">New Stock has arrived, check below!</p>
+    <div class="contentBoxUpgrades">
         <!-- List -->
-        <h3 class="list"> 3x Ballistic Dappening - £2,000,000</h3>
-        <h3 class="list"> 1x Harness - £2,000,000</h3>
-        <h3 class="list"> 12x Lock Difficulty - £1,500,000</h3>
-        <h3 class="list"> 6x Run Flat Tyres - £1,500,000</h3>
-        <h3 class="list"> 5x Tracker - £2,000,000</h3>
-        <h3 class="list"> 0x Virtual Cargo - Sold Out</h3>
-        <h3 class="list"> 0x Weight Reduction - Sold Out</h3>
-        <h3 class="list"> 22x Surplus Ammo - £100,000 (Nobody Wants These)</h3>
+        <h3 class="list">Ballistic Dappening's - £2,000,000</h3>
+        <h3 class="list">Harness's - £2,000,000</h3>
+        <h3 class="list">Lock Difficulty's - £1,500,000</h3>
+        <h3 class="list">Run Flat Tyres - £1,500,000</h3>
+        <h3 class="list">Tracker's - £2,000,000</h3>
+        <h3 class="list">Virtual Cargo's - £2,500,000</h3>
+        <h3 class="list">Weight Reduction's - £2,000,000</h3>
+        <h3 class="list">Surplus Ammo's - £100,000</h3>
 
 
     </div>
 
-    <div class="contentbox">
+    <div class="contentBoxUpgrades">
         <h2 class="contacttext">Contact Details:</h2>
         <h3 class="list"> Discord: Josh_#4471</h3>
         <h3 class="list" id="messagelink" onclick="messageZip()"> Forum Name: <link rel="link" href="">Zip</h3>
@@ -86,3 +83,48 @@
 
 
 </script>
+
+
+
+<style>
+.contentBoxUpgrades {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #e085b6;
+    border-width: 2px;
+    border-radius: 30px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    justify-content: center;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #0000003b;
+}
+
+
+@media (max-width: 1024px) {
+
+
+    .contentBoxUpgrades {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-color: #e085b6;
+        border-width: 2px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        justify-content: center;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        background-color: transparent;
+    }
+
+}
+</style>
