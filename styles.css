@@ -492,8 +492,8 @@ body { /* Background Image Stuff */
     }
 
     .section {
-        margin-top: 600px;
-        margin-bottom: -300px;
+        margin-top: 400px;
+        margin-bottom: 450px;
         display: flex;
         flex-direction: column;
         justify-content: center;
