@@ -40,35 +40,22 @@
 
 
         if (startingNumber < 3000) {
-            totalCalulcation = startingNumber * 1500
+            totalCalulcation = startingNumber * 3500
         }
 
         if (startingNumber >= 3000 && startingNumber < 6000) {
-            totalCalulcation = startingNumber * 1400
+            totalCalulcation = startingNumber * 3000
         }
 
         if (startingNumber >= 6000 && startingNumber < 10000) {
-            totalCalulcation = startingNumber * 1300
+            totalCalulcation = startingNumber * 2500
         }
 
         if (startingNumber >= 10000 && startingNumber < 15000) {
-            totalCalulcation = startingNumber * 1250
+            totalCalulcation = startingNumber * 2000
         }
-
-        if (startingNumber >= 15000 && startingNumber < 25000) {
-            totalCalulcation = startingNumber * 1200
-        }
-
-        if (startingNumber >= 25000 && startingNumber < 50000) {
-            totalCalulcation = startingNumber * 1150
-        }
-
-        if (startingNumber >= 50000 && startingNumber < 100000) {
-            totalCalulcation = startingNumber * 1050
-        }
-
-        if (startingNumber >= 100000) {
-            totalCalulcation = startingNumber * 1000
+        if (startingNumber >= 15000) {
+            totalCalulcation = startingNumber * 2000
         }
 
         document.getElementById("PriceDisplay").innerHTML = 'Price: ' + '£' + totalCalulcation.toLocaleString()
