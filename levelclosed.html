@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+        <img class="logo" src="Images/levels.png" alt="">
+        <!-- <h1 class="titletext">Zip's Levelling Service</h2> -->
+    </div>
+
+    <div class="contentBoxLevels">
+        <h2 class="resulttext">This Service Has Closed</h2>
+        <!-- <input id="startingNumber" class="inputbox" type="number" placeholder="Enter your current level">
+        <input id="endingNumber"class="inputbox" type="number" placeholder="Enter your ending level">
+        <button onclick="checkNumbers()"id="SubmitButton" class="calculateLevels">Calculate Your Price</button>
+        <hr style="width:20%;text-align:center;margin-top:2em;color:white;height: 1%;">
+        <h2 id="PriceDisplay" class="resulttext"></h2>
+        <button id="getstarted" class="getstartedbutton" onclick="messageZip()"></button> -->
+    </div>
+
+    <div class="backdiv">
+        <h1 onclick="location.href = 'index.html'"class="backtext">Back</h2>
+    </div>
+</body>
+</html>
+
+
+<script>
+
+    function messageZip() {
+        window.open('https://www.grandtheftarma.com/messenger/compose/?to=25735')
+    }
+      
+      function calculate(startCredits, startLevel, endLevel){
+        let credits = []
+        let loopTimes = 0
+        let levelStart = parseInt(startLevel)
+        let levelEnd = parseInt(endLevel)
+        let difference = (levelEnd - levelStart)
+        credits.push(startCredits)
+        while (loopTimes < difference){
+            loopTimes++
+            let creditAmount = (startCredits + 20)
+            credits.push(creditAmount)
+            startCredits = creditAmount
+        }
+        let sum = 0
+        for (let i = 0; i < credits.length; i++) {
+            sum += credits[i];
+        }
+        console.log(sum)
+        document.getElementById("getstarted").innerHTML = 'Get Started'
+
+
+        let number = sum * 2000
+        document.getElementById("PriceDisplay").innerHTML = 'Price: ' + '£' + number.toLocaleString()
+
+
+
+
+
+
+    }
+
+    function startingCredits(startLevel, endLevel){
+        
+        let startCredits = 0
+
+        if (startLevel == 1) {
+            startCredits = 120
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 2) {
+            startCredits = 140
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 3) {
+            startCredits = 160
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 4) {
+            startCredits = 180
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 5) {
+            startCredits = 200
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 6) {
+            startCredits = 220
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 7) {
+            startCredits = 240
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 8) {
+            startCredits = 260
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 9) {
+            startCredits = 280
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 10) {
+            startCredits = 300
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 11) {
+            startCredits = 320
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 12) {
+            startCredits = 340
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 13) {
+            startCredits = 360
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 14) {
+            startCredits = 380
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 15) {
+            startCredits = 400
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 16) {
+            startCredits = 420
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 17) {
+            startCredits = 440
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 18) {
+            startCredits = 460
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 19) {
+            startCredits = 480
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 20) {
+            startCredits = 500
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 21) {
+            startCredits = 520
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 22) {
+            startCredits = 540
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 23) {
+            startCredits = 560
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 24) {
+            startCredits = 580
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 25) {
+            startCredits = 600
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 26) {
+            startCredits = 620
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 27) {
+            startCredits = 640
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 28) {
+            startCredits = 660
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 29) {
+            startCredits = 680
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 30) {
+            startCredits = 700
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 31) {
+            startCredits = 720
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 32) {
+            startCredits = 740
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 33) {
+            startCredits = 760
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 34) {
+            startCredits = 780
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 35) {
+            startCredits = 800
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 36) {
+            startCredits = 820
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 37) {
+            startCredits = 840
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 38) {
+            startCredits = 860
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 39) {
+            startCredits = 880
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 40) {
+            startCredits = 900
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 41) {
+            startCredits = 920
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 42) {
+            startCredits = 940
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 43) {
+            startCredits = 960
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 44) {
+            startCredits = 980
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 45) {
+            startCredits = 1000
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 46) {
+            startCredits = 1020
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 47) {
+            startCredits = 1040
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 48) {
+            startCredits = 1060
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 49) {
+            startCredits = 1080
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 50) {
+            startCredits = 1100
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 51) {
+            startCredits = 1120
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 52) {
+            startCredits = 1140
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 53) {
+            startCredits = 1160
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 54) {
+            startCredits = 1180
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 55) {
+            startCredits = 1200
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 56) {
+            startCredits = 1220
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 57) {
+            startCredits = 1240
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 58) {
+            startCredits = 1260
+            calculate(startCredits, startLevel, endLevel)
+        }
+        if (startLevel == 59) {
+            startCredits = 1280
+            calculate(startCredits, startLevel, endLevel)
+        }
+
+
+
+
+
+
+    }
+
+    function checkNumbers() {
+        let startingNumber = document.getElementById("startingNumber").value
+        let endingNumber = document.getElementById("endingNumber").value
+
+        if (parseInt(startingNumber) < parseInt(endingNumber)) {
+            if (startingNumber > 0) {
+                if (endingNumber <= 60) {
+                    startingCredits(startingNumber, endingNumber)
+                } else {
+                    alert("The ending level has to be 60 or less")
+                    location.reload();
+                }
+            } else {
+                alert("Starting level has to be more than 0")
+                location.reload();
+            }
+        } else {
+            alert("Ending number has to be more than the starting number")
+            location.reload();
+        }
+    }
+
+
+
+</script>
+
+
+
+
+<style>
+    .calculateLevels {
+    margin-top: 1em;
+    background-color: #706fd3;
+    border-radius: 6px;
+    border: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px #191919;
+    color: white;
+    font-family: bookFont;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 22px;
+    transition: all 0.2s;
+}
+
+.calculateLevels:hover {
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.contentBoxLevels {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #706fd3;
+    border-width: 2px;
+    border-radius: 30px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    justify-content: center;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #0000003b;
+}
+
+
+@media (max-width: 1024px) {
+
+
+    .contentBoxLevels {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-color: #706fd3;
+        border-width: 2px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        justify-content: center;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        background-color: transparent;
+    }
+
+}
+</style>
+</style>
